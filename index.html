@@ -16,8 +16,8 @@
   --ink-2: #3a3a3d;
   --muted: #76767c;
   --line: #e7e7e5;
-  --accent: #1f4fd8;
-  --accent-soft: #eef2fd;
+  --accent: #8a8a90;
+  --accent-soft: #ededeb;
   --display: "Inter Tight", "Helvetica Neue", Arial, sans-serif;
   --body: "Inter", "Helvetica Neue", Arial, sans-serif;
   --mono: "JetBrains Mono", ui-monospace, Menlo, monospace;
@@ -61,7 +61,7 @@ p { margin: 0; }
   transition: background .15s, color .15s, transform .15s;
 }
 .btn.primary { background: var(--ink); color: #fff; }
-.btn.primary:hover { background: var(--accent); border-color: var(--accent); }
+.btn.primary:hover { background: #3a3a3d; border-color: #3a3a3d; }
 .btn.ghost { background: transparent; color: var(--ink); border-color: var(--line); }
 .btn.ghost:hover { border-color: var(--ink); }
 .btn .arr { transition: transform .15s; }
@@ -72,12 +72,10 @@ p { margin: 0; }
 .hero { padding: 96px 0 72px; }
 .status { display: inline-flex; align-items: center; gap: 10px; }
 .status .dot { width: 8px; height: 8px; border-radius: 50%; background: var(--accent); box-shadow: 0 0 0 4px var(--accent-soft); }
-.hero h1 {
-  font-size: clamp(64px, 12.5vw, 168px); font-weight: 800;
-  line-height: .86; letter-spacing: -.055em; margin: 28px 0 40px;
-}
-.hero h1 .l2 { display: block; color: var(--accent); }
-.hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: end; }
+.hero h1 { font-size: clamp(44px, 6vw, 72px); font-weight: 800; line-height: 1; letter-spacing: -.045em; margin: 24px 0 36px; white-space: nowrap; }
+@media (max-width: 640px) { .hero h1 { white-space: normal; } }
+.hero .role { font-family: var(--display); font-weight: 600; font-size: clamp(22px, 2.4vw, 28px); line-height: 1.25; letter-spacing: -.02em; margin-bottom: 16px; max-width: 24em; }
+.hero-grid { display: grid; grid-template-columns: 1.35fr 1fr; gap: 64px; align-items: start; }
 .hero .role {
   font-family: var(--display); font-weight: 600; font-size: clamp(24px, 2.6vw, 32px);
   line-height: 1.2; letter-spacing: -.02em; margin-bottom: 18px;
@@ -117,7 +115,7 @@ section { padding: 112px 0 0; }
 .feature .chart { margin-top: auto; padding-top: 40px; }
 .bignum { display: flex; align-items: baseline; gap: 16px; margin-bottom: 28px; }
 .bignum .from { font-family: var(--display); font-weight: 600; font-size: 40px; color: var(--muted); text-decoration: line-through; text-decoration-thickness: 2px; letter-spacing: -.03em; }
-.bignum .to { font-family: var(--display); font-weight: 800; font-size: 88px; line-height: .9; color: var(--accent); letter-spacing: -.05em; }
+.bignum .to { font-family: var(--display); font-weight: 800; font-size: 88px; line-height: .9; color: var(--ink); letter-spacing: -.05em; }
 .bignum .unit { font-size: 14px; color: var(--muted); }
 .bar-row { display: grid; grid-template-columns: 64px 1fr 56px; gap: 14px; align-items: center; margin-bottom: 12px; }
 .bar-row .k, .bar-row .v { font-family: var(--mono); font-size: 12px; color: var(--muted); }
@@ -125,7 +123,7 @@ section { padding: 112px 0 0; }
 .track { height: 14px; background: #e6e6e3; border-radius: 99px; overflow: hidden; }
 .bar { height: 100%; border-radius: 99px; transform-origin: left; }
 .bar.before { width: 100%; background: #b9b9bd; }
-.bar.after { width: 52.1%; background: var(--accent); animation: grow 1.2s cubic-bezier(.2,.7,.2,1) .4s both; }
+.bar.after { width: 52.1%; background: var(--ink); animation: grow 1.2s cubic-bezier(.2,.7,.2,1) .4s both; }
 @keyframes grow { from { transform: scaleX(0); } to { transform: scaleX(1); } }
 .mini .n { font-family: var(--display); font-weight: 800; font-size: 56px; line-height: 1; letter-spacing: -.045em; margin-top: 18px; }
 .mini h3 { font-size: 19px; margin-top: 10px; }
@@ -139,7 +137,7 @@ section { padding: 112px 0 0; }
 .job .meta .when { font-family: var(--mono); font-size: 13px; color: var(--ink); font-variant-numeric: tabular-nums; }
 .job .meta .team { font-size: 14px; color: var(--muted); margin-top: 6px; }
 .job h4 { font-size: 22px; font-weight: 700; line-height: 1.25; margin-bottom: 14px; display: flex; align-items: center; gap: 10px; flex-wrap: wrap; }
-.pill { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); background: var(--accent-soft); padding: 4px 10px; border-radius: 99px; }
+.pill { font-family: var(--mono); font-size: 11px; font-weight: 500; letter-spacing: .08em; text-transform: uppercase; color: var(--ink-2); background: var(--accent-soft); padding: 4px 10px; border-radius: 99px; }
 .job ul { margin: 0; padding: 0; list-style: none; display: grid; gap: 10px; }
 .job li { position: relative; padding-left: 22px; color: var(--ink-2); font-size: 15.5px; }
 .job li::before { content: ""; position: absolute; left: 0; top: .72em; width: 10px; height: 1.5px; background: var(--muted); }
@@ -168,12 +166,12 @@ section { padding: 112px 0 0; }
 .contact { margin-top: 112px; background: var(--ink); color: #fff; padding: 104px 0 40px; }
 .contact .label { color: #9a9aa0; }
 .contact h2 { font-size: clamp(56px, 10vw, 136px); font-weight: 800; line-height: .9; letter-spacing: -.055em; margin: 24px 0 40px; }
-.contact h2 span { color: #7d9dff; }
+.contact h2 span { color: #8a8a90; }
 .contact .mail {
   display: inline-block; font-family: var(--display); font-weight: 600; font-size: clamp(22px, 3vw, 36px);
   letter-spacing: -.02em; text-decoration: none; border-bottom: 2px solid #4a4a50; padding-bottom: 4px; transition: border-color .15s;
 }
-.contact .mail:hover { border-color: #7d9dff; }
+.contact .mail:hover { border-color: #8a8a90; }
 .contact .links { display: flex; gap: 12px; margin-top: 36px; flex-wrap: wrap; }
 .contact .btn.ghost { color: #fff; border-color: #3a3a40; }
 .contact .btn.ghost:hover { border-color: #fff; }
@@ -245,7 +243,7 @@ section { padding: 112px 0 0; }
 <header class="hero" id="top">
   <div class="wrap">
     <div class="label status"><span class="dot" aria-hidden="true"></span>Risk · Escalation · Trust &amp; Safety — Singapore</div>
-    <h1>Hye Won<span class="l2">Park.</span></h1>
+    <h1>Hye Won Park.</h1>
     <div class="hero-grid">
       <div>
         <p class="role">I lead the teams that handle a platform's highest-risk cases.</p>
