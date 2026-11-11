@@ -3,8 +3,8 @@
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Hye Won Park · Risk & Escalation Operations Leader</title>
-<meta name="description" content="Hye Won Park — team leader with 8+ years in risk, escalation, and trust & safety operations at TikTok and Airbnb. Singapore.">
+<title>Hye Won Park · Trust & Safety, Risk and Escalation Operations Leader</title>
+<meta name="description" content="Hye Won Park: Trust & Safety, risk and escalation operations leader with 8+ years at TikTok and Airbnb, working where trust and safety, compliance and AI meet. Singapore.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@500;600;700;800&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -107,7 +107,7 @@ section { padding: 112px 0 0; }
 .sec-head p { font-size: 18px; color: var(--ink-2); max-width: 34em; }
 
 /* Impact */
-.impact { display: grid; grid-template-columns: 1.4fr 1fr; gap: 20px; }
+.impact { display: grid; grid-template-columns: minmax(0,1.4fr) minmax(0,1fr); gap: 20px; }
 .card { background: var(--soft); border-radius: 20px; padding: 36px; }
 .card h3 { font-size: 24px; font-weight: 700; line-height: 1.2; margin: 14px 0 10px; }
 .card p { color: var(--ink-2); font-size: 15px; }
@@ -206,7 +206,10 @@ section { padding: 112px 0 0; }
   .metrics > div:nth-child(-n+2) { border-bottom: 1px solid var(--line); }
   section { padding-top: 80px; }
   .card { padding: 26px; }
-  .bignum .to { font-size: 68px; }
+  .bignum { flex-wrap: wrap; gap: 8px 12px; }
+  .bignum .to { font-size: 60px; }
+  .bignum .from { font-size: 30px; }
+  .feature, .impact > * { min-width: 0; }
   .skills { grid-template-columns: 1fr; }
   .skills > div:nth-child(even) { padding-left: 0; border-left: 0; }
   .company-head h3 { font-size: 32px; }
@@ -223,6 +226,10 @@ section { padding: 112px 0 0; }
   .contact h2 { font-size: 40px; }
   .job { break-inside: avoid; }
 }
+
+.impact-row { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; margin-top: 20px; }
+.mini .n.word { font-size: 44px; }
+@media (max-width: 960px) { .impact-row { grid-template-columns: 1fr; } }
 </style>
 </head>
 <body>
@@ -233,7 +240,7 @@ section { padding: 112px 0 0; }
     <ul>
       <li><a href="#impact">Impact</a></li>
       <li><a href="#experience">Experience</a></li>
-      <li><a href="#skills">Skills</a></li>
+      <li><a href="#skills">Strengths</a></li>
       <li><a href="#background">Education</a></li>
       <li><a class="btn primary" href="#contact">Get in touch</a></li>
     </ul>
@@ -242,23 +249,24 @@ section { padding: 112px 0 0; }
 
 <header class="hero" id="top">
   <div class="wrap">
-    <div class="label status"><span class="dot" aria-hidden="true"></span>Risk · Escalation · Trust &amp; Safety — Singapore</div>
+    <div class="label status"><span class="dot" aria-hidden="true"></span>Trust &amp; Safety · Risk · AI Operations — Singapore</div>
     <h1>Hye Won Park.</h1>
     <div class="hero-grid">
       <div>
-        <p class="role">I lead the teams that handle a platform's highest-risk cases.</p>
-        <p class="lede">Team leader with 8+ years in risk, escalation, and support operations at TikTok and Airbnb. I'm the escalation point for enterprise accounts, regulator-facing cases, and C-level stakeholders, and I use data to fix the root causes behind them.</p>
+        <p class="role">I turn high-risk, ambiguous problems into processes that hold up.</p>
+        <p class="lede">Trust &amp; Safety, risk and escalation operations leader with 8+ years at TikTok and Airbnb. I build SOPs and escalation frameworks from scratch, make the final call on high-severity incidents, work directly with regulators, and partner with Product and Engineering to evaluate and improve AI systems.</p>
         <div class="cta">
           <a class="btn primary" href="mailto:honeyhwp@gmail.com">Email me <span class="arr">→</span></a>
           <a class="btn ghost" href="https://linkedin.com/in/honeyhyewonpark">LinkedIn <span class="arr">↗</span></a>
         </div>
       </div>
       <dl class="facts">
+        <div><dt class="label">Focus</dt><dd>Trust &amp; Safety, risk and compliance, AI</dd></div>
         <div><dt class="label">Most recent</dt><dd>TikTok, Trust &amp; Safety</dd></div>
         <div><dt class="label">Previously</dt><dd>Airbnb, Regulatory Response</dd></div>
         <div><dt class="label">Markets led</dt><dd class="codes"><span title="China">CN</span><span title="Japan">JP</span><span title="Korea">KR</span><span title="Malaysia">MY</span><span title="India">IN</span></dd></div>
+        <div><dt class="label">Regulators</dt><dd class="codes"><span title="Korea">KR</span><span title="Australia">AU</span></dd></div>
         <div><dt class="label">Languages</dt><dd>English, Korean</dd></div>
-        <div><dt class="label">Based in</dt><dd>Singapore</dd></div>
       </dl>
     </div>
   </div>
@@ -267,7 +275,7 @@ section { padding: 112px 0 0; }
 <div class="wrap">
   <div class="metrics reveal">
     <div><div class="n">8<em>+</em></div><div class="t">years at TikTok and Airbnb</div></div>
-    <div><div class="n">5</div><div class="t">APAC markets on one team I led</div></div>
+    <div><div class="n">5</div><div class="t">APAC markets running my SOPs and escalation standards</div></div>
     <div><div class="n">−48<em>%</em></div><div class="t">case-routing errors after my redesign</div></div>
     <div><div class="n"><em>+</em>20%</div><div class="t">efficiency and quality, measured by CSAT</div></div>
   </div>
@@ -278,7 +286,7 @@ section { padding: 112px 0 0; }
     <div class="wrap">
       <div class="sec-head reveal">
         <div><div class="label">01 — Selected impact</div><h2>Results, not just resolutions.</h2></div>
-        <p>I lead a multi-market team, set quality and SLA standards, and turn case data into process and product fixes with SQL and Aeolus dashboards. I work closely with Product, Engineering, Legal, and Policy.</p>
+        <p>I work where trust and safety, risk and compliance, and AI overlap: places where policy has to become practical, measurable operations.</p>
       </div>
       <div class="impact">
         <article class="card feature reveal">
@@ -294,8 +302,28 @@ section { padding: 112px 0 0; }
         <article class="card mini reveal">
           <div class="label">AI · NLP auto-routing</div>
           <div class="n">~6,000</div>
-          <h3>support scenarios in an intent model</h3>
-          <p>I partnered with Product to train a keyword and intent classifier and weighed accuracy and risk trade-offs before rollout.</p>
+          <h3>support scenarios in a classification model</h3>
+          <p>Partnered with Product Management to train the model, and weighed accuracy and risk trade-offs before rollout.</p>
+        </article>
+        <article class="card mini reveal">
+          <div class="label">AI · RLHF preference labeling</div>
+          <div class="n">6,000</div>
+          <h3>case sample labeled for reward-model training</h3>
+          <p>Ran a three-labeler human preference pipeline on AI-generated outputs that informed RLHF and reduced case misrouting.</p>
+        </article>
+      </div>
+      <div class="impact-row">
+        <article class="card mini reveal">
+          <div class="label">0-to-1 programs</div>
+          <div class="n">5</div>
+          <h3>markets adopted my SOPs and runbooks</h3>
+          <p>Escalation standards built from scratch by sitting with frontline specialists, rolled out across APAC with post-incident reviews.</p>
+        </article>
+        <article class="card mini reveal">
+          <div class="label">Regulatory engagement</div>
+          <div class="n">2</div>
+          <h3>countries of direct regulator liaison</h3>
+          <p>KCA and KISA in Korea; NSW Fair Trading, NCAT and VCAT in Australia, under strict regulatory timelines.</p>
         </article>
         <article class="card mini reveal">
           <div class="label">Recognition</div>
@@ -311,24 +339,22 @@ section { padding: 112px 0 0; }
     <div class="wrap">
       <div class="sec-head reveal">
         <div><div class="label">02 — Experience</div><h2>Where I've worked.</h2></div>
-        <p>Eight years on the front line of trust and safety, from premium support to leading APAC escalations through elections, the FIFA World Cup, and the Olympics.</p>
+        <p>Eight years on the front line of trust and safety, from premium support to leading APAC escalations through Elections, the FIFA World Cup and the Olympics.</p>
       </div>
 
       <div class="company reveal">
         <div class="company-head"><h3>TikTok</h3><span class="label">Singapore · 2021 – 2026</span></div>
 
         <div class="job">
-          <div class="meta"><div class="when">May 2025 – May 2026</div><div class="team">Trust and Safety</div></div>
+          <div class="meta"><div class="when">May 2025 – May 2026</div><div class="team">Trust &amp; Safety</div></div>
           <div>
             <h4>APAC/EU Creator Support</h4>
             <ul>
-              <li>Resolved high-severity escalations for enterprise and creator accounts, and supported <strong>30–50 top creators per day</strong> on payout discrepancies and disputes.</li>
-              <li>Built real-time SQL dashboards in Aeolus tracking data-quality, safety, payout, and performance metrics for faster issue resolution.</li>
-              <li>Improved efficiency and quality by <strong>20%</strong>, measured by CSAT improvement, through weekly root-cause analysis and refined case-level policies and macros.</li>
-              <li>Embedded Legal and Policy guardrails and control checks into case review before decisions were finalized.</li>
-              <li>Collaborated with Engineering and Product on an AI-based support capability, contributing use-case definition, risk assessment, and quality-review criteria, with human review of model output built in. Ran a human preference-labeling pipeline on AI outputs that reduced case misrouting.</li>
-              <li>Represented APAC in global leadership reporting with skip-level and cross-regional updates on high-exposure cases and emerging risk patterns.</li>
-              <li>Participated in on-call coverage for leadership escalations and high-exposure incidents.</li>
+              <li>Senior point of contact for complex, time-critical escalations for enterprise and creator accounts across APAC and EU, including payout discrepancies and disputes for <strong>30–50 top creators a day</strong>.</li>
+              <li>Worked with Engineering and Product to define the use case, assess risk and set quality-review criteria (with human review of model output) for an <strong>AI-based support capability</strong>; contributed to training the AI agent and building its QA framework.</li>
+              <li>Built Legal and Policy guardrails into case review; improved efficiency and quality by <strong>20%</strong> (CSAT) through weekly root-cause analysis.</li>
+              <li>Built real-time SQL dashboards in Aeolus tracking data-quality, safety, payout and performance metrics.</li>
+              <li>Represented APAC in global leadership reporting with skip-level updates on high-exposure cases and emerging risk patterns.</li>
             </ul>
           </div>
         </div>
@@ -338,25 +364,28 @@ section { padding: 112px 0 0; }
           <div>
             <h4>Internal Safety Support</h4>
             <ul>
-              <li>Owned leadership-level escalations involving <strong>C-level stakeholders</strong>, writing executive-ready reports that documented reasoning for Legal, Policy, and senior leadership.</li>
-              <li>Identified a systemic case-routing failure through weekly root-cause analysis, built the evidence case, and partnered with Engineering to redesign the routing logic, reducing error rates from <strong>24% to 12.5%</strong>.</li>
-              <li>Partnered with Product Management on an NLP auto-routing project, training a keyword/intent classification model across roughly <strong>6,000 support scenarios</strong> and assessing accuracy and risk trade-offs before rollout.</li>
-              <li>Built a quality-review process requiring documented decision rationale on all high-severity cases, creating audit trails and cross-team accountability. Awarded <strong>“1st GS&amp;S Team Success Champion.”</strong></li>
+              <li>Partnered with Product Management on an NLP auto-routing project, training a classification model across <strong>~6,000 support scenarios</strong> and weighing accuracy and risk trade-offs before rollout.</li>
+              <li>Ran a human preference-labeling pipeline on AI-generated outputs (three labelers, <strong>6,000-case sample</strong>) that informed RLHF reward-model training and reduced case misrouting.</li>
+              <li>Found a systemic case-routing failure through root-cause analysis, built the evidence case and partnered with Engineering to redesign the routing logic, cutting error rates from <strong>24% to 12.5%</strong>.</li>
+              <li>Set up an <strong>impersonation policy and review program</strong> with Policy and Engineering, defining detection logic and the investigation workflow for a new class of platform risk.</li>
+              <li>Owned leadership-level escalations involving <strong>C-level stakeholders</strong>, with executive-ready reports for Legal, Policy and senior leadership.</li>
+              <li>Built a quality-review process requiring documented decision rationale on every high-severity case, creating audit trails and cross-team accountability. Awarded <strong>“1st GS&amp;S Team Success Champion.”</strong></li>
             </ul>
           </div>
         </div>
 
         <div class="job">
-          <div class="meta"><div class="when">Jun 2021 – Jun 2024</div><div class="team">Risk and Response</div></div>
+          <div class="meta"><div class="when">Jun 2021 – Jun 2024</div><div class="team">Risk &amp; Response</div></div>
           <div>
             <h4>High Risk Escalation APAC Lead <span class="pill">Team lead</span></h4>
             <ul>
-              <li>Hired, managed, and coached a team of risk and escalation specialists across <strong>China, Japan, Korea, Malaysia, and India</strong>, including interviews, 1:1 coaching, performance reviews, and real-time calibration on judgment.</li>
-              <li>Owned quality-assurance auditing and SLA performance management of outsourced partner networks, running recurring reviews to hold partners to standards.</li>
-              <li>Tracked case volume by region to find where backlogs were highest, and used the analysis to allocate agents and set regional response plans.</li>
-              <li>Owned the APAC Legal escalation queue and AU Regulatory Queue end to end, coordinating Legal, Policy, Product, and Engineering to meet regulator deadlines.</li>
-              <li>Designed global SOPs, runbooks, and readiness frameworks from the ground up, rolled out across APAC with structured post-incident reviews.</li>
-              <li>Final decision-maker on the most complex, high-risk incidents during <strong>Elections, the FIFA World Cup, and the Olympics</strong>, with executive-level updates on program health and emerging risk.</li>
+              <li>Designed global SOPs, runbooks and governance frameworks from the ground up, rolled out across APAC with structured post-incident reviews.</li>
+              <li>Built the high-risk escalation SOP by sitting with frontline specialists across APAC and consolidating it into one protocol with clear escalation thresholds and turnaround standards.</li>
+              <li>Final decision-maker on the most complex, high-risk incidents during <strong>Elections, the FIFA World Cup and the Olympics</strong>, with executive-level updates.</li>
+              <li>Owned the APAC Legal escalation queue and AU Regulatory Queue end to end, coordinating Legal, Policy, Product and Engineering.</li>
+              <li>Worked with outsourced partner teams across APAC (including a Malaysia hub) on QA audits and SLA performance.</li>
+              <li>Hired, managed and coached risk and escalation specialists across <strong>China, Japan, Korea, Malaysia and India</strong>: interviews, 1:1 coaching, performance reviews and real-time calibration on judgment.</li>
+              <li>Tracked case volume by region to set regional response plans; built dashboards in SQL, Tableau and Aeolus.</li>
             </ul>
           </div>
         </div>
@@ -370,9 +399,9 @@ section { padding: 112px 0 0; }
           <div>
             <h4>Regulatory Response Specialist</h4>
             <ul>
-              <li>Direct liaison to statutory authorities (<strong>KCA and KISA</strong> in Korea, <strong>NSW Fair Trading, NCAT, and VCAT</strong> in Australia) under strict regulatory timelines.</li>
-              <li>Conducted SQL-based audits of GDPR/CCPA compliance gaps and identity-validation vulnerabilities, translating findings into localized controls and enforcement policies.</li>
-              <li>Supported North American legal teams on AAA arbitrations, small-claims proceedings, and Attorney General complaints.</li>
+              <li>Direct liaison to statutory authorities: <strong>KCA and KISA</strong> in Korea; <strong>NSW Fair Trading, NCAT and VCAT</strong> in Australia. Coordinated responses under strict regulatory timelines.</li>
+              <li>Ran SQL-based audits of <strong>GDPR/CCPA</strong> compliance gaps and identity-validation weaknesses across APAC accounts, turning findings into localized controls.</li>
+              <li>Supported North American legal teams on AAA arbitrations, small-claims proceedings and Attorney General complaints; handled escalations involving legal or media threats.</li>
             </ul>
           </div>
         </div>
@@ -382,7 +411,8 @@ section { padding: 112px 0 0; }
           <div>
             <h4>Crisis Management Specialist</h4>
             <ul>
-              <li>Resolved high-risk claims and disputes above <strong>USD 25,000</strong> using data forensics. Early member of Project Pioneer, helping establish claims policies and workflows.</li>
+              <li>Investigated and resolved high-risk claims and disputes above <strong>USD 25,000</strong> (property damage, bodily injury, illegal hazards).</li>
+              <li>Early member of Project Pioneer; helped set up and revise policies for host–guest Trust &amp; Safety claims (Host Guarantee, Guest Insurance).</li>
             </ul>
           </div>
         </div>
@@ -392,7 +422,7 @@ section { padding: 112px 0 0; }
           <div>
             <h4>Premium Support Specialist</h4>
             <ul>
-              <li>Most senior member of the APAC Premium Support team, exceeded NPS and performance goals and flagged workflow errors to improve macros and processes.</li>
+              <li>Final escalation point for complex service disruptions, with consistently industry-leading NPS and CSAT.</li>
             </ul>
           </div>
         </div>
@@ -403,17 +433,17 @@ section { padding: 112px 0 0; }
   <section id="skills">
     <div class="wrap">
       <div class="sec-head reveal">
-        <div><div class="label">03 — Capabilities</div><h2>What I bring.</h2></div>
-        <p>Judgment under pressure, backed by data and the operating discipline to scale it across markets.</p>
+        <div><div class="label">03 — Strengths</div><h2>What I bring.</h2></div>
+        <p>Judgment under pressure, backed by data, and the operating discipline to scale it across markets.</p>
       </div>
       <div class="skills reveal">
-        <div><div class="label">01</div><h3>Team leadership</h3><p>Hiring, 1:1 coaching, performance reviews, and real-time calibration on judgment.</p></div>
-        <div><div class="label">02</div><h3>Operational management</h3><p>SLA and quality management of partner networks, regional workload planning, on-call coverage for leadership escalations and large-scale events.</p></div>
-        <div><div class="label">03</div><h3>Data and insights</h3><p>SQL and Aeolus dashboards and weekly root-cause analysis that turn case data into product fixes.</p></div>
-        <div><div class="label">04</div><h3>Complex problem-solving</h3><p>Escalation point for high-risk, legal, regulatory, and C-level cases.</p></div>
-        <div><div class="label">05</div><h3>Project management</h3><p>SOPs, runbooks, and quality-review programs delivered with Product, Engineering, Legal, and Policy.</p></div>
-        <div><div class="label">06</div><h3>Tools &amp; domains</h3>
-          <div class="tools"><span>SQL</span><span>Aeolus</span><span>GDPR / CCPA</span><span>AI governance</span><span>NLP routing</span><span>Regulatory response</span></div>
+        <div><div class="label">01</div><h3>0-to-1 programs and playbooks</h3><p>SOPs, runbooks, escalation thresholds and governance frameworks built from scratch and scaled across APAC.</p></div>
+        <div><div class="label">02</div><h3>High-severity incident response</h3><p>Final decision-maker on time-critical, policy-sensitive cases, with executive-ready reporting and post-incident reviews.</p></div>
+        <div><div class="label">03</div><h3>AI evaluation and model quality</h3><p>NLP classification, RLHF preference labeling, and AI agent QA frameworks with human review of model output.</p></div>
+        <div><div class="label">04</div><h3>Risk, compliance and regulators</h3><p>Regulator liaison, GDPR/CCPA compliance-gap audits, and Legal and Policy guardrails built into case review.</p></div>
+        <div><div class="label">05</div><h3>Cross-functional leadership</h3><p>Aligning Policy, Legal, Product, Engineering and regulators without direct authority.</p></div>
+        <div><div class="label">06</div><h3>Data and tools</h3>
+          <div class="tools"><span>SQL</span><span>Tableau</span><span>Aeolus</span><span>Excel</span><span>NLP routing</span><span>RLHF</span><span>AI agent QA</span><span>GDPR / CCPA</span></div>
         </div>
       </div>
     </div>
@@ -429,14 +459,14 @@ section { padding: 112px 0 0; }
           <div class="label">Education &amp; certification</div>
           <ul class="list">
             <li><span><b>BA (Honours), International Business</b><small>Nottingham Trent University</small></span></li>
-            <li><span><b>Artificial Intelligence Governance Professional (AIGP)</b><small>IAPP</small></span><span class="when">Exam Nov 2026</span></li>
+            <li><span><b>Artificial Intelligence Governance Professional (AIGP)</b><small>IAPP · in progress</small></span><span class="when">Exam Nov 2026</span></li>
           </ul>
         </div>
         <div class="card reveal">
           <div class="label">Earlier career</div>
           <ul class="list">
+            <li><span><b>Airbnb Experience Host</b><small>Seoul</small></span><span class="when">2016 – 2018</span></li>
             <li><span><b>Customer Relationship Manager</b><small>Christian Dior Couture, Seoul</small></span><span class="when">2015 – 2016</span></li>
-            <li><span><b>Airbnb Experience Host</b><small>Independent</small></span><span class="when">2016 – 2018</span></li>
           </ul>
         </div>
       </div>
